@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Name: Jamaal Robinson | Date: 03/02/2026 -->
+  <title>Bronx Boxing Club | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="index.html">Bronx Boxing Club</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">☰</label>
+
+    <ul class="menu">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+
+      <li class="dropdown">
+        <a href="programs.html">Programs</a>
+        <ul class="dropdown-menu">
+          <li><a href="youth-boxing.html">Youth Boxing</a></li>
+          <li><a href="adult-training.html">Adult Training</a></li>
+        </ul>
+      </li>
+
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>Welcome to Bronx Boxing Club</h1>
+    <p>Training, discipline, and community. Explore programs for youth and adults.</p>
+
+    <section class="slider-section">
+      <h2>Bronx Training Highlights</h2>
+
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <img src="images/slide1.jpg" alt="Boxers training in the gym" />
+          <div class="caption">Train hard. Stay sharp</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/slide2.jpg" alt="Youth boxing practice session" />
+          <div class="caption">Do you have what it takes? Come down and test your skills</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/slide3.jpg" alt="Adult training session in progress" />
+          <div class="caption">No excuses. Just work.</div>
+        </div>
+
+        <div class="slide fade">
+          <img src="images/slide4.jpg" alt="Boxing equipment inside the club" />
+          <div class="caption">Train like a fighter. We'll be waiting to meet you.</div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
